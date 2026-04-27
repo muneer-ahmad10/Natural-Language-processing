@@ -63,6 +63,20 @@ This repo focuses on:
 * ✅ Day 2: TF-IDF & Word Embeddings
 
 ---
+## 📍 Day 3: Sentiment Classifier
+
+Built a basic sentiment classification pipeline using:
+- TF-IDF + Logistic Regression
+- Word2Vec (with sentence vector averaging)
+
+### Key Learnings:
+- ML models require fixed-size input vectors
+- TF-IDF provides sentence-level features directly
+- Word2Vec provides word-level embeddings → needs aggregation
+- Representation of text plays a crucial role in model performance
+
+### Pipeline:
+Text → Preprocessing → Vectorization → Model → Prediction
 
 ## 🤝 Connect
 
