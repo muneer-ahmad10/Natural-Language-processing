@@ -69,6 +69,134 @@ Built a basic sentiment classification pipeline using:
 - TF-IDF + Logistic Regression
 - Word2Vec (with sentence vector averaging)
 
+ ## 📍 Day 4: RNN & Embeddings (Step 1)
+
+Today marks the transition from traditional NLP to **Deep Learning for text**.
+
+---
+
+## 🧠 What Problem Are We Solving?
+
+Earlier approaches (TF-IDF, Word2Vec averaging) had a key limitation:
+
+👉 They ignore **word order (sequence)**
+
+Example:
+
+* "I love AI"
+* "AI love I"
+
+Both look similar to traditional models ❌
+But meaning is clearly different.
+
+---
+
+## 🔥 Introduction to RNN (Recurrent Neural Network)
+
+RNNs are designed to process **sequential data**.
+
+👉 Instead of reading the whole sentence at once,
+they process it **word by word** while maintaining a **memory (hidden state)**.
+
+---
+
+## 🔄 RNN Flow
+
+```id="k6r9dr"
+Word₁ → Word₂ → Word₃ → ... → Prediction
+        ↓
+     Memory (Hidden State)
+```
+
+---
+
+## 🧠 Key Insight
+
+👉 Meaning in language depends on **order and context**, not just words.
+
+---
+
+## 🔢 Step 1: Text → Numerical Sequences
+
+Before feeding text into RNN:
+
+* Build a vocabulary → word → index
+* Convert sentences → sequence of integers
+
+Example:
+
+```id="u9d5nq"
+"I love AI" → [1, 2, 3]
+```
+
+---
+
+## ⚠️ Limitation of Basic Encoding
+
+👉 These numbers are just IDs
+👉 They **do NOT capture meaning**
+
+Example:
+
+* "love" = 2
+* "hate" = 5
+
+No relationship between them ❌
+
+---
+
+## 💡 Introduction to Embedding Layer
+
+To solve this, we use an **Embedding Layer**.
+
+👉 Instead of:
+
+```id="qjzqmb"
+word → number
+```
+
+👉 We learn:
+
+```id="zdc9f4"
+word → vector (meaningful representation)
+```
+
+---
+
+## 🧠 Why Embeddings Matter
+
+* Words with similar meaning → similar vectors
+* Model learns relationships automatically
+* Much better representation than raw indices
+
+---
+
+## 🔥 Updated Pipeline
+
+```id="n0d4xz"
+Text → Tokenization → Encoding → Embedding → RNN → Prediction
+```
+
+---
+
+## 🎯 Key Learnings
+
+* RNNs process sequences (order matters)
+* Encoding converts text into numerical form
+* Embeddings transform IDs into meaningful vectors
+* Representation plays a crucial role in deep learning
+
+---
+
+## 🚀 Next Step
+
+* Understanding how RNN processes sequences internally
+* Hidden states and how memory evolves
+* Limitations of RNN → leading to LSTM
+
+---
+
+
 ### Key Learnings:
 - ML models require fixed-size input vectors
 - TF-IDF provides sentence-level features directly
