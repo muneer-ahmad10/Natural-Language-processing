@@ -190,6 +190,14 @@ Text → Tokenization → Encoding → Embedding → RNN → Prediction
 
 ## 🚀 Next Step
 
+## 📍 Day 4: RNN & Embeddings
+
+Learned how text is converted into sequences and processed using RNNs.  
+Understood that simple encoding gives IDs, while embeddings provide meaningful vector representations.  
+RNN processes words sequentially and maintains memory (hidden state) to capture context.  
+Built a basic supervised sentiment classifier using PyTorch.  
+Realized the importance of sequence and representation in deep learning for NLP.
+
 * Understanding how RNN processes sequences internally
 * Hidden states and how memory evolves
 * Limitations of RNN → leading to LSTM
