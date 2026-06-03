@@ -1,225 +1,145 @@
-# 🧠 Natural Language Processing (NLP) — Learning Series
+# 🧠 Natural Language Processing — Learning Journey
 
-This repository documents my structured journey of learning **Natural Language Processing (NLP)** from scratch, focusing on building strong intuition along with practical implementation in Python.
+> From text preprocessing to Transformers, LLMs, and Multi-head Attention — documented day by day.
 
----
-
-## 🚀 What This Repo Covers
-
-* 🔤 Text Preprocessing Pipeline
-* 📊 Bag of Words & TF-IDF
-* 🧠 Word Embeddings (Word2Vec)
+![Python](https://img.shields.io/badge/Python-3.9+-0f2027?style=flat-square&logo=python&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-F37626?style=flat-square&logo=jupyter&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-Transformers-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
+![Commits](https://img.shields.io/badge/Commits-50+-0f2027?style=flat-square&logo=github&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Actively%20Learning-brightgreen?style=flat-square)
 
 ---
 
-## 🎯 Goal
+## 📌 About this repo
 
-The goal of this repository is not just to implement models, but to:
+This is my personal NLP learning repository — every notebook represents a day of focused study and hands-on practice. The journey starts from raw text preprocessing and progressively builds up to Transformers, LLM pipelines, and building a Mini GPT from scratch.
 
-* Understand the **intuition behind each concept**
-* Learn **how and why** each technique is used
-* Build a **strong foundation in NLP and Deep Learning**
+This isn't a course repo. Every file is something I built, ran, and understood myself.
 
 ---
 
-Each folder contains:
+## 🗺️ Learning roadmap
 
-* 📘 Explanation (notes)
-* 💻 Code implementation
-* 🧠 Key insights
+### Phase 1 — Foundations
+> Text processing, numerical representations, first mini project
 
----
-
-## 🛠️ Tech Stack
-
-* Python
-* NLTK
-* scikit-learn
+| Day | Notebook | Topic |
+|---|---|---|
+| 01 | `Day_01_Preprocessing.ipynb` | Text preprocessing — tokenization, stopwords, stemming, lemmatization |
+| 02 | `Day_02_conversion_into_numbers.ipynb` | Converting text to numbers — Bag of Words, TF-IDF, word counts |
+| 03 | `Day_03_Sentiment_classifier.ipynb` | Mini project — sentiment classifier applying Day 1 & 2 concepts |
 
 ---
 
-## 📌 Key Learning Approach
+### Phase 2 — Sequence Models
+> RNNs, LSTMs, embeddings
 
-* Start with **basic intuition**
-* Move to **mathematical understanding**
-* Then implement using code
-* Finally, connect concepts to real-world applications
-
----
-
-## 🔥 Why This Repo?
-
-Many resources jump directly into complex theory.
-This repo focuses on:
-👉 Learning concepts in the simplest possible way
-👉 Building clarity step-by-step
-👉 Making NLP beginner-friendly
+| Day | Notebook | Topic |
+|---|---|---|
+| 04 | `Day_04_RNN.ipynb` | Recurrent Neural Networks — embeddings & sequence learning |
+| 05 | `Day_05_RNN.ipynb` | RNN deep dive — improving understanding of recurrent architecture |
+| 06 | `Day_06_LSTM.ipynb` | Long Short-Term Memory networks — solving vanishing gradient problem |
+| 07 | `Day_07_Practice_TF_IDF.ipynb` | TF-IDF practice with pipelines and real text data |
 
 ---
 
-## 📅 Progress
+### Phase 3 — Attention & Transformers
+> The architecture that powers GPT, BERT, and modern LLMs
 
-* ✅ Day 1: Text Preprocessing
-* ✅ Day 2: TF-IDF & Word Embeddings
-
----
-## 📍 Day 3: Sentiment Classifier
-
-Built a basic sentiment classification pipeline using:
-- TF-IDF + Logistic Regression
-- Word2Vec (with sentence vector averaging)
-
- ## 📍 Day 4: RNN & Embeddings (Step 1)
-
-Today marks the transition from traditional NLP to **Deep Learning for text**.
+| Day | Notebook | Topic |
+|---|---|---|
+| 08 | `Day_08_Attention.ipynb` | Attention mechanism — scaled dot-product attention |
+| 09 | `Day_09_Transformers.ipynb` | Transformer architecture — encoder, decoder, positional encoding |
+| 10 | `Day_10_mini_transformer.ipynb` | Building a mini transformer from scratch |
+| 12 | `Day_12_Transformer_Flow.ipynb` | Transformer data flow — understanding end-to-end pipeline |
+| 13 | `Day_13_mini_transformer.ipynb` | Multi-head attention — deep dive and implementation |
 
 ---
 
-## 🧠 What Problem Are We Solving?
+### Phase 4 — LLMs & Applied Projects
+> Understanding and building with large language model pipelines
 
-Earlier approaches (TF-IDF, Word2Vec averaging) had a key limitation:
-
-👉 They ignore **word order (sequence)**
-
-Example:
-
-* "I love AI"
-* "AI love I"
-
-Both look similar to traditional models ❌
-But meaning is clearly different.
+| Day | Notebook | Topic |
+|---|---|---|
+| 11 | `Day_11_LLM_Pipeline.ipynb` | LLM pipeline — understanding how large language models work |
+| — | `Project_02_Mini_GPT.ipynb` | Building a Mini GPT from scratch using transformer architecture |
+| — | `News_text_classification.ipynb` | Applied project — news article text classification |
+| — | `Resume_Analyzer.ipynb` | Applied project — NLP-powered resume analysis (semantic matching) |
+| — | `NLP_Practice_01.ipynb` | General NLP practice notebook |
 
 ---
 
-## 🔥 Introduction to RNN (Recurrent Neural Network)
+## 🔑 Key concepts covered
 
-RNNs are designed to process **sequential data**.
-
-👉 Instead of reading the whole sentence at once,
-they process it **word by word** while maintaining a **memory (hidden state)**.
-
----
-
-## 🔄 RNN Flow
-
-```id="k6r9dr"
-Word₁ → Word₂ → Word₃ → ... → Prediction
-        ↓
-     Memory (Hidden State)
+```text
+Text Preprocessing       Tokenization · Stemming · Lemmatization · Stopwords
+Text Representation      Bag of Words · TF-IDF · Word Embeddings
+Sequence Models          RNN · LSTM · Vanishing Gradient Problem
+Attention Mechanism      Scaled Dot-Product Attention · Self-Attention
+Transformer Architecture Encoder · Decoder · Positional Encoding · Multi-head Attention
+LLM Pipelines            Tokenization → Embedding → Attention → Generation
+Applied Projects         Sentiment Analysis · Text Classification · Resume Analyzer · Mini GPT
 ```
 
 ---
 
-## 🧠 Key Insight
+## 📈 Progress
 
-👉 Meaning in language depends on **order and context**, not just words.
-
----
-
-## 🔢 Step 1: Text → Numerical Sequences
-
-Before feeding text into RNN:
-
-* Build a vocabulary → word → index
-* Convert sentences → sequence of integers
-
-Example:
-
-```id="u9d5nq"
-"I love AI" → [1, 2, 3]
+```text
+Foundations          ██████████████████████████   Complete
+Sequence Models      ██████████████████████████   Complete
+Attention            ██████████████████████████   Complete
+Transformers         ████████████████████░░░░░░   In progress
+LLMs & GenAI         ██████████░░░░░░░░░░░░░░░░   In progress
+RAG Pipelines        ░░░░░░░░░░░░░░░░░░░░░░░░░░   Coming next
+Fine-tuning LLMs     ░░░░░░░░░░░░░░░░░░░░░░░░░░   Coming next
 ```
 
 ---
 
-## ⚠️ Limitation of Basic Encoding
+## 🛠️ Tech stack
 
-👉 These numbers are just IDs
-👉 They **do NOT capture meaning**
-
-Example:
-
-* "love" = 2
-* "hate" = 5
-
-No relationship between them ❌
+`Python` · `PyTorch` · `HuggingFace Transformers` · `spaCy` · `NLTK` · `Scikit-learn` · `Pandas` · `NumPy` · `Jupyter` · `Google Colab`
 
 ---
 
-## 💡 Introduction to Embedding Layer
+## 🚀 How to use this repo
 
-To solve this, we use an **Embedding Layer**.
+```bash
+git clone https://github.com/muneer-ahmad10/Natural-Language-processing.git
+cd Natural-Language-processing
 
-👉 Instead of:
+# Install dependencies
+pip install torch transformers spacy scikit-learn pandas numpy jupyter
 
-```id="qjzqmb"
-word → number
-```
-
-👉 We learn:
-
-```id="zdc9f4"
-word → vector (meaningful representation)
+# Open any notebook
+jupyter notebook
 ```
 
 ---
 
-## 🧠 Why Embeddings Matter
+## 🔮 What's coming next
 
-* Words with similar meaning → similar vectors
-* Model learns relationships automatically
-* Much better representation than raw indices
-
----
-
-## 🔥 Updated Pipeline
-
-```id="n0d4xz"
-Text → Tokenization → Encoding → Embedding → RNN → Prediction
-```
+- [ ] RAG (Retrieval Augmented Generation) pipeline
+- [ ] Fine-tuning a BERT model on custom data
+- [ ] Building a chatbot using HuggingFace
+- [ ] Vector databases — FAISS & ChromaDB
+- [ ] Deploying an LLM-powered app with Streamlit
 
 ---
 
-## 🎯 Key Learnings
+## 🔗 Related project
 
-* RNNs process sequences (order matters)
-* Encoding converts text into numerical form
-* Embeddings transform IDs into meaningful vectors
-* Representation plays a crucial role in deep learning
+This learning journey directly contributed to building the **AI Resume Analyzer** — a production NLP app using Sentence Transformers and semantic search.
 
----
-
-## 🚀 Next Step
-
-## 📍 Day 4: RNN & Embeddings
-
-Learned how text is converted into sequences and processed using RNNs.  
-Understood that simple encoding gives IDs, while embeddings provide meaningful vector representations.  
-RNN processes words sequentially and maintains memory (hidden state) to capture context.  
-Built a basic supervised sentiment classifier using PyTorch.  
-Realized the importance of sequence and representation in deep learning for NLP.
-
-* Understanding how RNN processes sequences internally
-* Hidden states and how memory evolves
-* Limitations of RNN → leading to LSTM
+👉 [View AI Resume Analyzer](https://github.com/muneer-ahmad10/Resume-Analyzer)
 
 ---
 
+## 👨‍💻 Author
 
-### Key Learnings:
-- ML models require fixed-size input vectors
-- TF-IDF provides sentence-level features directly
-- Word2Vec provides word-level embeddings → needs aggregation
-- Representation of text plays a crucial role in model performance
+**Muneer Ahmad Dar** — AI/NLP Engineer
 
-### Pipeline:
-Text → Preprocessing → Vectorization → Model → Prediction
-
-## 🤝 Connect
-
-I’m also sharing daily insights from this journey on LinkedIn.
-Feel free to connect and follow along!
-
----
-
-⭐ If you find this helpful, consider starring the repo!
-
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/muneerahmad-826363267)
+[![GitHub](https://img.shields.io/badge/GitHub-0f2027?style=flat-square&logo=github&logoColor=white)](https://github.com/muneer-ahmad10)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:abrard855@gmail.com)
